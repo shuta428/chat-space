@@ -1,0 +1,17 @@
+.side-bar
+  .side-bar__user-name
+    .side-bar__side-box
+      %p.side-bar__side-box__user-name
+        masa
+      %ul.side-bar__side-box__menu
+        %li.side-bar__side-box__edit-bar__box__user
+          = link_to "#" do
+            = icon('fas', 'edit')
+        %li.side-bar__side-box__new-group
+          =link_to "#" do
+            = icon('fas', 'cog')
+  .side-bar__group-list
+    %p.side-bar__group-name
+      techcamp
+    %p.side-bar__message
+      まだメッセージはありません
