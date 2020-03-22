@@ -1,0 +1,37 @@
+.main-chat
+  .main-chat__group-info
+    %h2.group-name
+      techcamp
+      %ul.member-list
+        Member:
+        %li.member-first
+          masa
+    = link_to "#", class: "edit__btn" do
+      Edit
+  .main-chat__message-list
+    .main-chat__message-list__message
+      .main-chat__message-list__message__id
+        %p.message__taker
+          taro
+        %p.message__date
+          2020/03/21(sat)00:00:00
+      %p.message__text
+        おはよう！    
+    .main-chat__message-list__message
+      .main-chat__message-list__message__id
+        %p.message__taker
+          taro
+        %p.message__date
+          2020/03/21(sat)01:00:00
+      %p.message__text
+        今日はいい天気。
+    
+  .main-chat__message-form
+    %form.new_messeage
+      .input-box
+        %input{type: "text", class: "input-box__text", placeholder: "type a message"}
+        %label{class: "input-box__image"}
+          = icon('fas', 'image')
+          %input{type: "file", class: "input-box__image__file"}
+      %input{type: "submit", class: "submit-btn", value: "Send"}
+    
